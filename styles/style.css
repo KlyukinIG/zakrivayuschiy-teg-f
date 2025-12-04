@@ -13,7 +13,7 @@
 .page {
   display: grid;
   place-items: center;
-  gap: 100px;
+  gap: 101px;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--variable-font, sans-serif);
@@ -29,7 +29,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: 21px;
   inline-size: clamp(375px, 30.52vw + 260.56px, 700px);
   min-block-size: 327px;
   border: 2px solid var(--themes-main-color, #000000);
@@ -82,7 +82,6 @@
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
-  object-position: center;
   display: block;
 }
 
@@ -115,9 +114,10 @@
 }
 
 .card_content {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 25px;
-  padding: 23px 26px 23px 25px;
+  padding: 23px 26px;
 }
 
 .card_content p {
@@ -129,11 +129,10 @@
 }
 
 .card_controls {
-  justify-self: end;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
+  justify-content: flex-end;
+  gap: 3px;
 }
 
 .button {
@@ -188,7 +187,7 @@
 }
 
 .button_like {
-  padding: 12px 37px;
+  padding: 12px 35px;
 }
 
 .button_heart {
@@ -254,8 +253,7 @@
 }
 
 .floppy_modal {
-  min-inline-size: 341px;
-  max-inline-size: 353px;
+  min-inline-size: 300px;
   border: 2px solid #000000;
   background-color: var(--bg-color, #ffffff);
   padding: 30px 40px;
@@ -263,6 +261,7 @@
   font-weight: var(--font-wght, 400);
   font-size: 14px;
   line-height: 150%;
+  text-transform: uppercase;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,8 +273,8 @@
 }
 
 .floppy_modal svg {
-  width: 28px;
-  height: 28px;
+  width: 39px;
+  height: 39px;
 }
 
 .floppy_modal_content {
@@ -309,14 +308,21 @@
     min-block-size: 368px;
   }
 
-  .card_content {
-    display: grid;
-    gap: 25px;
-    padding: 20px 26px 25px 26px;
-  }
-
   .button_save svg {
     width: 21px;
     height: 21px;
+  }
+
+  .floppy_modal {
+    max-inline-size: 353px;
+  }
+
+  .card_content {
+    gap: 25px;
+    padding: 17px 26px 22px;
+  }
+
+  .main {
+    gap: 51px;
   }
 }
