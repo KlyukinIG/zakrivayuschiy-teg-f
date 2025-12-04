@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 28 28">
-  <symbol id="floppy">
+  <symbol id="floppy" viewBox="0 0 28 28">
     <path fill="#000" d="M0 0h2.154v2.154H0zM0 2.154h2.154v2.154H0zM0 4.308h2.154v2.154H0zM0 6.462h2.154v2.154H0z"/>
     <path fill="#000" d="M0 8.615h2.154v2.154H0zM0 10.77h2.154v2.154H0z"/>
     <path fill="#000" d="M0 12.923h2.154v2.154H0zM0 15.077h2.154v2.154H0z"/>

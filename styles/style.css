@@ -65,7 +65,7 @@
 
 .card_title {
   font-family: var(--variable-font, sans-serif);
-  font-variation-settings: 'wght' 700;
+  font-variation-settings: "wght" 700;
   font-size: 18px;
   color: var(--themes-main-color, #000000);
   padding: 4px 10px;
@@ -122,7 +122,7 @@
 
 .card_content p {
   font-family: var(--variable-font, sans-serif);
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
   font-size: 18px;
   line-height: 21px;
   color: var(--themes-main-color, #000000);
@@ -139,7 +139,7 @@
   background-color: var(--bg-color, #ffffff);
   font-family: var(--acent-font, sans-serif);
   border: 2px solid var(--themes-main-color, #000000);
-  font-variation-settings: 'wght' 400;
+  font-variation-settings: "wght" 400;
   font-size: 14px;
   line-height: 90%;
   color: var(--themes-main-color, #000000);
@@ -218,6 +218,10 @@
   align-items: center;
 }
 
+.floppy_modal:not([open]) {
+  display: none;
+} 
+
 .floppy_modal svg {
   width: 28px;
   height: 28px;
@@ -259,7 +263,7 @@
     gap: 25px;
     padding: 20px 26px 25px 26px;
   }
-  
+
   .button_save svg {
     width: 21px;
     height: 21px;
