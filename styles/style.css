@@ -266,7 +266,7 @@
 }
 
 .floppy_modal {
-  min-inline-size: 300px;
+  inline-size: 341px;
   border: 2px solid #000000;
   background-color: var(--bg-color, #ffffff);
   padding: 30px 40px;
@@ -392,7 +392,7 @@
   }
 
   .floppy_modal {
-    max-inline-size: 353px;
+    inline-size: 353px;
   }
 
   .card_content {
