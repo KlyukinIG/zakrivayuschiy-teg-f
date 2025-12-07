@@ -12,8 +12,9 @@
 
 .page {
   display: grid;
-  place-items: center;
-  gap: 101px;
+  gap: 100px;
+  align-items: center;
+  justify-content: center;
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--variable-font, sans-serif);
@@ -55,13 +56,15 @@
 .main {
   display: grid;
   place-items: center;
-  gap: 49px;
+  gap: 3.23em;
 }
 
 .card {
   inline-size: clamp(375px, 30.52vw + 260.56px, 700px);
   border: 2px solid var(--themes-main-color, #000000);
   background-color: var(--bg-color, #ffffff);
+  display: grid;
+  place-content: center;
 }
 
 .card_title {
@@ -115,10 +118,10 @@
 }
 
 .card_content {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-  padding: 23px 26px;
+  padding: 22px 26px;
+  display: grid;
+  gap: 24px;
+  inline-size: 100%;
 }
 
 .card_content p {
@@ -130,10 +133,11 @@
 }
 
 .card_controls {
+  justify-self: end;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 3px;
+  justify-content: center;
+  gap: 1px;
 }
 
 .button {
@@ -142,7 +146,6 @@
   border: 2px solid var(--themes-main-color, #000000);
   font-variation-settings: "wght" 400;
   font-size: 14px;
-  line-height: 90%;
   color: #ffffff;
   position: relative;
   overflow: hidden;
@@ -174,16 +177,19 @@
 }
 
 .button_like {
-  min-width: 118px;
+  inline-size: 130px;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 13px 15px;
+  padding: 0.75em 0.9375em;
 }
 
 .button_heart {
   border: 2px solid transparent;
   background-color: var(--bg-color, #ffffff);
+}
+
+.button_heart svg {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -213,7 +219,7 @@
 }
 
 .button_save {
-  margin: 3px 0 50px;
+  margin-bottom: 100px;
   padding: 15px 20px;
   display: flex;
   flex-direction: column;
@@ -377,7 +383,7 @@
 
   .header {
     padding-block-start: 130px;
-    padding-block-end: 130px;
+    padding-block-end: 128px;
   }
 
   .button_save svg {
@@ -390,11 +396,21 @@
   }
 
   .card_content {
-    gap: 25px;
-    padding: 17px 26px 22px;
+    gap: 24px;
+    padding: 20px 27px;
   }
 
   .main {
-    gap: 51px;
+    gap: 3.289em;
+  }
+
+  .floppy_modal {
+    inline-size: 353px;
+    overflow: hidden;
+  }
+
+  .floppy_modal_content,
+  .floppy_modal button {
+    inline-size: 293px;
   }
 }
