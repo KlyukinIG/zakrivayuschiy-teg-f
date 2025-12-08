@@ -268,10 +268,9 @@
 }
 
 .floppy_modal {
-  inline-size: 341px;
   border: 2px solid #000000;
   background-color: var(--bg-color, #ffffff);
-  padding: 30px 40px;
+  padding: 30px 28px;
   font-family: var(--acent-font, fantasy);
   font-weight: var(--font-wght, 400);
   font-size: 14px;
@@ -300,6 +299,7 @@
   max-inline-size: 293px;
   align-items: center;
   margin-bottom: 30px;
+  padding: 0 10px;
 }
 
 .floppy_modal button {
@@ -393,10 +393,6 @@
     height: 21px;
   }
 
-  .floppy_modal {
-    inline-size: 353px;
-  }
-
   .card_content {
     gap: 24px;
     padding: 20px 27px 23px;
@@ -406,14 +402,13 @@
     gap: 3.244em;
   }
 
-  .floppy_modal {
-    inline-size: 353px;
-    overflow: hidden;
-  }
-
-  .floppy_modal_content,
   .floppy_modal button {
     inline-size: 293px;
+  }
+
+  .floppy_modal_content {
+    padding: 0 1px;
+    gap: 18px;
   }
 
   .button_heart svg {
@@ -422,5 +417,9 @@
     justify-content: center;
     width: 2em;
     height: 2.08em;
+  }
+
+  .floppy_modal {
+    padding: 30px 29px;
   }
 }
